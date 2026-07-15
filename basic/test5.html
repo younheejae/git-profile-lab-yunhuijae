@@ -1,0 +1,91 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>HTML 기초 실습5</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <legend>개인 프로필 정보</legend>
+        <p>
+          <label for="userName">이름: </label>
+          <input
+            type="text"
+            id="userName"
+            name="userName"
+            minlength="2"
+            maxlength="20"
+            required
+          />
+        </p>
+
+        <p>
+          <label for="userBirth">생년월일: </label>
+          <input
+            type="text"
+            id="userBirth"
+            name="userBirth"
+            minlength="2"
+            maxlength="20"
+            required
+          />
+        </p>
+
+        <p>
+          성별:
+          <label
+            ><input type="radio" id="male" name="gender" value="male" />
+            남성</label
+          >
+          <label
+            ><input type="radio" id="female" name="gender" value="female" />
+            여성</label
+          >
+          <label
+            ><input type="radio" id="none" name="gender" value="none" /> 선택
+            안함</label
+          >
+        </p>
+
+        <p>
+          관심 분야 (중복 선택 가능): <br />
+          <label
+            ><input
+              type="checkbox"
+              id="frontend"
+              name="interest"
+              value="frontend"
+            />
+            웹 프론트엔드</label
+          >
+          <br />
+          <label
+            ><input type="checkbox" id="uiux" name="interest" value="uiux" />
+            UI/UX 디자인</label
+          >
+          <br />
+          <label
+            ><input
+              type="checkbox"
+              id="backend"
+              name="interest"
+              value="backend"
+            />
+            백엔드 & 데이터베이스</label
+          >
+          <br />
+          <label
+            ><input
+              type="checkbox"
+              id="devops"
+              name="interest"
+              value="devops"
+            />
+            클라우드 & 인프라</label
+          >
+        </p>
+      </fieldset>
+    </form>
+  </body>
+</html>

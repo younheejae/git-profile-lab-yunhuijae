@@ -1,0 +1,36 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>HTML 기초 실습4</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form>
+        <fieldset>
+            <legend>계정 정보</legend>
+            <p>
+                <label for="userName">이름: </label>
+                <input type="text" id="userName" name="userName" minlength="2" maxlength="20" required />
+                <small>(필수)</small>
+            </p>
+            <p>
+                <label for="userPw">비밀번호: </label>
+                <input type="password" id="userPw" name="userPw" minlength="8" maxlength="20" required placeholder="8자 이상 입력" />
+                <small>(필수)</small>
+            </p>
+            
+            <p>
+                <label for="userEmail">이메일: </label>
+                <input type="email" id="userEmail" name="userEmail" placeholder="이메일 주소 입력" />
+                @
+                <select id="emailDomain" name="emailDomain">
+                    <option value="">직접 입력</option>
+                    <option value="naver.com">naver.com</option>
+                    <option value="gmail.com">gmail.com</option>
+                    <option value="daum.net">daum.net</option>
+                </select>
+            </p>
+        </fieldset>
+    </form>
+  </body>
+</html>
